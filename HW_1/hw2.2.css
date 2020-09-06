@@ -1,0 +1,15 @@
+#form {
+    display: flex;
+    flex-direction: column;
+}
+
+input{
+    margin-top: 2em;
+    width: 25%;
+    padding: 10px 10px;
+    box-sizing: border-box;
+}
+
+.response{
+    margin-top: 1em;
+}

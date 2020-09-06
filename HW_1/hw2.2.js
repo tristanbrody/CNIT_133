@@ -1,6 +1,7 @@
 document.addEventListener('DOMContentLoaded', function() {
 //create element that will show response upon submitting inputs
 const response = document.createElement('div');
+response.classList.add('response');
 //define form element and add event listener for submission
 const form = document.querySelector("#form");
 form.addEventListener('submit', intSubmit);
