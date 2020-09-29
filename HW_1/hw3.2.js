@@ -22,16 +22,18 @@ form.addEventListener('submit', e => {
 });
 
 function validateInputs() {
+	let invalidInputs = 0;
 	for (let input of itemInputs) {
 		if (onlyNums(input.value)) {
-			return true;
+			continue;
 		} else {
 			let linebreak = document.createElement('br');
 			//prettier-ignore
 			document.querySelector('.input-div').append(`Please correct your entry for ${input.dataset.name}`, linebreak);
-			return false;
+			invalidInputs++;
 		}
 	}
+	return invalidInputs === 0;
 }
 
 function getItemPrices() {
