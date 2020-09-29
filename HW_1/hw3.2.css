@@ -6,6 +6,14 @@ a {
 	margin-right: 20px;
 }
 
+#name {
+	position: relative;
+}
+
+#name::after {
+	content: attr(data-tool-tip);
+}
+
 h1 {
 	font-size: 22px;
 }
