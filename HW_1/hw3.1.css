@@ -1,0 +1,46 @@
+body {
+    background-color: #36D8FB;
+}
+
+h1 {
+    font-family: 'Zilla Slab', serif;
+}
+
+#input-form{
+    display: flex;
+    flex-direction: column;
+    font-family: 'Zilla Slab', serif;
+}
+
+input[class*='value'] {
+    margin-top: 5px;
+    margin-bottom: 15px;
+    width: 30%;
+}
+
+input:hover {
+    cursor: text;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+button{
+    letter-spacing: 3px;
+    font-family: 'Arvo', serif;
+    background: #FBBB36;
+    border-radius: 30px;
+    font-weight: 800;
+    color: #043027;
+    outline: none;
+}
+
+input:invalid{
+    box-shadow: 0 0 3px #FB3636
+}
+
+#input-div{
+    margin-top: 10px;
+    font-size: 1.5em;
+}

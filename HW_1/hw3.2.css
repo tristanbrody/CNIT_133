@@ -1,0 +1,44 @@
+* {
+	font-family: 'Arvo', serif;
+}
+
+h1 {
+	font-size: 22px;
+}
+
+.item-inputs-container {
+	display: flex;
+	flex-direction: column;
+}
+
+input {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+	width: 30%;
+}
+
+#submit-button {
+	margin-top: 0.5em;
+	margin-bottom: 1em;
+	font-weight: 600;
+	background: #fbbb36;
+	display: block;
+}
+
+th {
+	padding-right: 80px;
+}
+
+td {
+	padding-right: 80px;
+}
+
+th:first-of-type {
+	text-align: start;
+}
+
+.sold-output {
+	width: 150px;
+	cursor: default;
+	background: lightgray;
+}

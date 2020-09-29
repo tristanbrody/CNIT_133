@@ -1,0 +1,20 @@
+* {
+	font-family: 'Arvo', serif;
+}
+
+#main-input {
+	margin-left: 4px;
+	border: 2px solid black;
+}
+
+#main-output {
+	cursor: default;
+}
+
+button {
+	margin-top: 10px;
+}
+
+#output-div {
+	margin-top: 10px;
+}

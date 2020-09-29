@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"
+        description="A homework assignment using JavaScript and a  jQuery UI plugin to make basic calculations" />
+    <title>3.2: Sales Calculations</title>
+    <link rel="stylesheet" href="hw3.2.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Arvo&family=Zilla+Slab:wght@500&display=swap"
+        rel="stylesheet" />
+</head>
+
+<body>
+    <form action="" id="input-form" novalidate>
+        <label for="" id="name">Enter the salesperson's name:</label>
+        <input type="text" id="name" required title="Please make sure that the salesperson's name is spelled correctly"
+            onmouseover='$("#name").tooltip()' />
+
+        <h1>Input the number of items sold for each item number:</h1>
+        <div class="item-inputs-container">
+            <label for="" id="item-1">Item 1</label>
+            <input type="number" id="item-1" min: 0 data-name="item 1">
+
+            <label for="" id="item-2">Item 2</label>
+            <input type="number" id="item-2" min: 0 data-name="item 2">
+
+            <label for="" id="item-3">Item 3</label>
+            <input type="number" id="item-3" min: 0 data-name="item 3">
+
+            <label for="" id="item-4">Item 4</label>
+            <input type="number" id="item-4" min: 0 data-name="item 4">
+        </div>
+
+        <button type="submit" id="submit-button">Submit</button>
+        <div class="input-div"></div>
+    </form>
+
+    <table>
+        <tr>
+            <th>Item #</th>
+            <th><span id="item-price-header">Price</span></th>
+            <th><span id="number-sold-header">Number Sold</span></th>
+            <th><span id="total-header">Total</span></th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td data-type="price" data-item="item-1">$239.99</td>
+            <td><input type="text" class="sold-output" data-type="number-sold" data-item="item-1" readonly></td>
+            <td><input type="text" class="sold-output" data-type="total-sold" data-item="item-1" readonly></td>
+        </tr>
+        <tr data-item="item-2">
+            <td>2</td>
+            <td data-type="price" data-item="item-2">$129.75</td>
+            <td><input type="text" class="sold-output" data-type="number-sold" data-item="item-2" readonly></td>
+            <td><input type="text" class="sold-output" data-type="total-sold" data-item="item-2" readonly></td>
+        </tr>
+        <tr data-item="item-3">
+            <td>3</td>
+            <td data-type="price" data-item="item-3">$99.95</td>
+            <td><input type="text" class="sold-output" data-type="number-sold" data-item="item-3" readonly></td>
+            <td><input type="text" class="sold-output" data-type="total-sold" readonly data-item="item-3"></td>
+        </tr>
+        <tr data-item="item-4">
+            <td>4</td>
+            <td data-type="price" data-item="item-4">$350.89</td>
+            <td><input type="text" class="sold-output" data-type="number-sold" readonly data-item="item-4"></td>
+            <td><input type="text" class="sold-output" data-type="total-sold" readonly data-item="item-4"></td>
+        </tr>
+        <tr>
+            <td>Total Amount Sold:</td>
+            <td></td>
+            <td></td>
+            <td><input type="text" class="sold-output" data-type="grand-total" readonly></td>
+        </tr>
+        <tr>
+            <td>Total Weekly Earnings:</td>
+            <td></td>
+            <td></td>
+            <td><input type="text" class="sold-output" data-type="grand-total-weekly" readonly></td>
+        </tr>
+    </table>
+
+
+    <h1></h1>
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+    <script src="hw3.2.js"></script>
+    <script src="validationfuncs.js"></script>
+</body>
+
+</html>
