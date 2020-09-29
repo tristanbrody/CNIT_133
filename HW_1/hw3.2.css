@@ -2,6 +2,10 @@
 	font-family: 'Arvo', serif;
 }
 
+a {
+	margin-right: 20px;
+}
+
 h1 {
 	font-size: 22px;
 }

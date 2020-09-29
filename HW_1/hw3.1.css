@@ -1,46 +1,52 @@
 body {
-    background-color: #36D8FB;
+	background-color: #36d8fb;
 }
 
 h1 {
-    font-family: 'Zilla Slab', serif;
+	font-family: 'Zilla Slab', serif;
 }
 
-#input-form{
-    display: flex;
-    flex-direction: column;
-    font-family: 'Zilla Slab', serif;
+a {
+	margin-right: 20px;
+	color: blue;
+	font-family: 'Zilla Slab', serif;
+}
+
+#input-form {
+	display: flex;
+	flex-direction: column;
+	font-family: 'Zilla Slab', serif;
 }
 
 input[class*='value'] {
-    margin-top: 5px;
-    margin-bottom: 15px;
-    width: 30%;
+	margin-top: 5px;
+	margin-bottom: 15px;
+	width: 30%;
 }
 
 input:hover {
-    cursor: text;
+	cursor: text;
 }
 
 button:hover {
-    cursor: pointer;
+	cursor: pointer;
 }
 
-button{
-    letter-spacing: 3px;
-    font-family: 'Arvo', serif;
-    background: #FBBB36;
-    border-radius: 30px;
-    font-weight: 800;
-    color: #043027;
-    outline: none;
+button {
+	letter-spacing: 3px;
+	font-family: 'Arvo', serif;
+	background: #fbbb36;
+	border-radius: 30px;
+	font-weight: 800;
+	color: #043027;
+	outline: none;
 }
 
-input:invalid{
-    box-shadow: 0 0 3px #FB3636
+input:invalid {
+	box-shadow: 0 0 3px #fb3636;
 }
 
-#input-div{
-    margin-top: 10px;
-    font-size: 1.5em;
+#input-div {
+	margin-top: 10px;
+	font-size: 1.5em;
 }
