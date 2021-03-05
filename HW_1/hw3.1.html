@@ -21,23 +21,27 @@
     <div id="main-inputs-div" class="hidden">
         <form action="" id="input-form" novalidate>
             <label for="student-name">Student Name:</label>
-            <input type="text" id="student-name" placeholder="Enter the student's name" class="name-value" required />
+            <input type="text" id="student-name" placeholder="Enter the student's name" name="student-name"
+                class="name-value" required />
 
             <label for="homework-average">Homework Average:</label>
             <input type="number" id="homework-average" class="grade-value" min="0" max="100"
-                placeholder="Enter the homework average" required data-name="homework average" />
+                placeholder="Enter the homework average" required data-name="homework average"
+                name="homework-average" />
 
             <label for="mid-term-exam-score">Mid-Term Exam Score:</label>
             <input type="number" id="mid-term-exam-score" class="grade-value" min="0" max="100"
-                placeholder="Enter the mid-term exam score" required data-name="mid-term exam score" />
+                placeholder="Enter the mid-term exam score" required data-name="mid-term exam score"
+                name="midterm-exam-score" />
 
             <label for="final-exam-score">Final Exam Score:</label>
             <input type="number" id="final-exam-score" class="grade-value" min="0" max="100"
-                placeholder="Enter the final exam score" required data-name="final exam score" />
+                placeholder="Enter the final exam score" required data-name="final exam score"
+                name="final-exam-score" />
 
             <label for="participation">Participation:</label>
             <input type="number" id="participation" class="grade-value" min="0" max="100"
-                placeholder="Enter the participation grade" required data-name="participation" />
+                placeholder="Enter the participation grade" required data-name="participation" name="participation" />
             <div id="button-div">
                 <button type="submit" id="submit-button">Submit</button>
             </div>

@@ -181,13 +181,7 @@ $(document).ready(function () {
 
 	/*
 to-do:
-1) use jQuery to improve UI: 
-	a. add a button that opens a pop-up to add a student's grade
-	b. for every student grade added, add a line item to page
 	c. every student grade added to page should have buttons to remove or edit the data
-2) added functionality:
-	a. new student grades should be added to local storage
-	b. adding/removing/editing student grades from DOM and local storage
 3) refactor so it's class-based + try to add pure functions
 4) review data validation -- add tests with Jasmine
 */
