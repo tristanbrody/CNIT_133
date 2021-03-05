@@ -16,7 +16,9 @@
     <a href="./index.html">Home Page</a> <a href="./hw3.2.html"> 3.2 </a> <a href="./hw3.3.html"> 3.3</a>
     <h1>Student Grades</h1>
 
-    <div id="main-inputs-div">
+    <a href="" id="enter-new-grade">Enter a new grade</a>
+    <a href="" id="view-grades">View grades</a>
+    <div id="main-inputs-div" class="hidden">
         <form action="" id="input-form" novalidate>
             <label for="student-name">Student Name:</label>
             <input type="text" id="student-name" placeholder="Enter the student's name" class="name-value" required />
@@ -43,8 +45,35 @@
         </form>
     </div>
 
+    <table class="hidden" id="student-grades-table">
+        <thead>
+            <tr>
+                <td>Student name</td>
+                <td>HW Average</td>
+                <td>Midterm score</td>
+                <td>Final exam score</td>
+                <td>Participation</td>
+                <td>Final average</td>
+            </tr>
+        </thead>
+        <tbody id="student-grades-tbody">
+
+        </tbody>
+    </table>
+    <template id="student-grades-template">
+        <tr>
+            <td id="td-student-name"></td>
+            <td id="td-hw-average"></td>
+            <td id="td-midterm-exam-score"></td>
+            <td id="td-final-exam-score"></td>
+            <td id="td-participation"></td>
+            <td id="td-final-average"></td>
+        </tr>
+    </template>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="hw3.1.js"></script>
     <script src="validationfuncs.js"></script>
+    <script src="localstoragefuncs.js"></script>
 </body>
 
 </html>
