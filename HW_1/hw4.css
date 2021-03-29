@@ -1,0 +1,33 @@
+.text-box {
+	border: 1px solid black;
+	padding: 15px;
+	min-width: 100px;
+	display: block;
+	margin: 10px;
+}
+
+th,
+td {
+	border: 1px solid #ddd;
+	min-width: 200px;
+	text-align: left;
+}
+
+th {
+	background-color: #800000;
+	color: white;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+tr:nth-child(even) {
+	background-color: white;
+}
+
+tr:nth-child(odd) {
+	background-color: #4caf50;
+}
+
+tr:last-of-type {
+	margin-bottom: 5px;
+}
