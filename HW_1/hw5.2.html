@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>5.2: Fun with Select Menus</title>
+    <link rel="stylesheet" href="hw5.2.css">
+</head>
+
+<body>
+    <a href="index.html">Back</a> <a href="./hw5.1.html"> 5.1 </a> <a href="./hw5.3.html"> 5.3</a>
+
+    <p>Select a link from the options below to visit the site in a new tab</p>
+
+    <div class="container">
+        <label for="select-language-links">Choose a language link</label>
+        <select name="language-links" id="select-language-links">
+            <option value="">--please select a website--</option>
+            <option value="https://www.forvo.com">Forvo</option>
+            <option value="https://www.quizlet.com">Quizlet</option>
+            <option value="https://www.wordreference.com">Wordreference</option>
+        </select>
+    </div>
+
+    <div class="container">
+        <form action="" id="form-coding-links">
+            <label for="select-coding-links">Choose a coding link</label>
+            <select name="coding-links" id="select-coding-links">
+                <option value="">--please select a website--</option>
+                <option value="https://developer.mozilla.org/en-US/">MDN</option>
+                <option value="https://codepen.io">CodePen</option>
+                <option value="https://www.github.com">GitHub</option>
+            </select>
+            <div class="button-container">
+                <button id="button-coding-links">Go to Coding Website</button>
+            </div>
+        </form>
+    </div>
+    <script src="hw5.2.js"></script>
+</body>
+
+</html>

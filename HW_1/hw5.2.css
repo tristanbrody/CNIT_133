@@ -1,0 +1,12 @@
+div {
+	margin-bottom: 30px;
+}
+
+button {
+	margin: 5px;
+	margin-left: 100px;
+}
+
+button:hover {
+	cursor: pointer;
+}
