@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Homework 5">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./hw5.1.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Quattrocento&display=swap" rel="stylesheet">
+    <title>CNIT 133: Homework 5</title>
+</head>
+
+<body>
+    <div class="form-container">
+        <form id="main-form" novalidate>
+
+            <div class="container">
+                <label for="carly-rae-impact-statement" id="carly-rae-impact-statement">Please briefly describe how
+                    Carly Rae has changed your
+                    life</label>
+                <input name="carly-rae-impact-statement" id="carly-rae-impact-statement" cols="45" rows="5"
+                    required></input>
+            </div>
+            <div class="error-message" id="carly-rae-impact-statement-error"></div>
+
+            <div class="container">
+                <p>Select your favorite Carly Rae Song</p>
+                <div class="radio-group">
+                    <input type="radio" id="run-away-with-me" name="fav-carly-rae-song" value="run-away-with-me" checked
+                        required>
+                    <label for="run-away-with-me">Run Away with Me</label>
+                </div>
+                <div class="radio-group">
+                    <input type="radio" id="party-of-one" name="fav-carly-rae-song" value="party-of-one">
+                    <label for="party-of-one">Party of One</label>
+                </div>
+                <div class="radio-group">
+                    <input type="radio" id="making-the-most-of-the-night" name="fav-carly-rae-song"
+                        value="making-the-most-of-the-night">
+                    <label for="making-the-most-of-the-night">Making the Most of the Night</label>
+                </div>
+                <div class="radio-group">
+                    <input type="radio" id="no-drug-like-me" name="fav-carly-rae-song" value="no-drug-like-me">
+                    <label for="no-drug-like-me">No Drug Like Me</label>
+                </div>
+            </div>
+
+            <div id="checkbox-container">
+                <label for="checkbox-container" id="checkbox-container">Select a beverage</label>
+                <div class="checkbox-group">
+                    <input type="checkbox" id="coke" value="coke" required>
+                    <label for="coke">Coke</label>
+                </div>
+                <div class="checkbox-group">
+                    <input type="checkbox" id="pepsi" value="pepsi">
+                    <label for="pepsi">Pepsi</label>
+                </div>
+                <div class="checkbox-group">
+                    <input type="checkbox" id="water" value="water">
+                    <label for="water">Water</label>
+                </div>
+                <div class="checkbox-group">
+                    <input type="checkbox" id="juice" value="juice">
+                    <label for="juice">Something</label>
+                </div>
+            </div>
+            <div class="error-message" id="checkbox-container-error"></div>
+
+            <div class="container">
+                <label for="some-datalist" id="some-datalist">Choose a color:</label>
+                <input type="text" id="some-datalist" list="some-datalist-set" required>
+                <datalist id="some-datalist-set">
+                    <option value="red"></option>
+                    <option value="orange"></option>
+                    <option value="blue"></option>
+                    <option value="green"></option>
+                </datalist>
+            </div>
+            <div class="error-message" id="some-datalist-error"></div>
+
+            <button>Submit</button>
+        </form>
+    </div>
+    <script src="hw5.1.js"></script>
+</body>
+
+</html>
