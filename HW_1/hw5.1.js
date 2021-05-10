@@ -36,12 +36,12 @@ window.addEventListener('DOMContentLoaded', () => {
 		}
 		//radio button has first option pre-selected, so cannot be invalid
 
-		validCheckboxes = validateCheckboxGroup(checkboxes);
+		let validCheckboxes = validateCheckboxGroup(checkboxes);
 
 		if (!validCheckboxes) invalidElements.push({ id: 'checkbox-container', type: 'checkbox' });
 
 		//if all other elements are valid and at least one checkbox is selected, reload the page
-		validInput = invalidElements.length === 0;
+		let validInput = invalidElements.length === 0;
 
 		//ordinarily would send this data to our server to pass to database, but for this example will just reload the page to clear inputs
 		if (validInput) {
@@ -65,7 +65,7 @@ function getErrorMessage(type) {
 function errorMessageController(invalidElements) {
 	/* handle adding error messages to DOM, when given an array of invalid elements. Array is an array of objects. Each object contains id of 
     invalid input element and input type */
-	for (invalidElement of invalidElements) {
+	for (let invalidElement of invalidElements) {
 		let { id, type } = invalidElement;
 		let div = document.createElement('div');
 		let errorMessage = getErrorMessage(type);
@@ -75,16 +75,16 @@ function errorMessageController(invalidElements) {
 
 function clearOutExistingErrorMessages(errorMessages) {
 	//clear out error messages from previous submission of form
-	for (errorMessage of errorMessages) {
+	for (let errorMessage of errorMessages) {
 		errorMessage.innerText = '';
 	}
 }
 
 function getAllowedDatalistValues(id) {
 	//given an id for a datalist, return the values for each corresponding option
-	datalist = Array.from(document.querySelectorAll(`#${id}-set option`));
+	let datalist = Array.from(document.querySelectorAll(`#${id}-set option`));
 	const values = [];
-	for (option of datalist) {
+	for (let option of datalist) {
 		console.log(option);
 		values.push(option.value);
 	}
