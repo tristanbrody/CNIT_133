@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homework 7 Part 1</title>
+    <link rel="stylesheet" href="hw7.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Arimo&family=Nanum+Gothic&family=Newsreader:wght@200&family=Source+Sans+Pro:wght@200&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="nav-links">
+        <a href="index.html">Back</a> <a href="./hw7.2.html"> 7.2<a>
+    </div>
+    <h1>Select some styles to change the page!</h1>
+
+    <div>
+        <p id="sample-text">Here is some sample text for your entertainment. Lorem ipsum, dolor sit amet consectetur
+            adipisicing elit.
+            Saepe veritatis officiis quam repellendus! Soluta tempora laboriosam optio recusandae error ipsum blanditiis
+            praesentium? Et autem deserunt aspernatur odio quidem animi officiis!</p>
+    </div>
+    <label for="font-select">Choose a font:</label>
+
+    <select name="fonts" id="font-select">
+        <option value="">default</option>
+        <option value="source-sans-pro">source-sans-pro</option>
+        <option value="newsreader">newsreader</option>
+        <option value="arimo">arimo</option>
+        <option value="nanum-gothic">nanum-gothic</option>
+    </select>
+
+    <p id="">Select a font size for sample text above:</p>
+
+    <div>
+        <input type="radio" id="12" name="font-size" value="12">
+        <label for="12">12</label>
+    </div>
+
+    <div>
+        <input type="radio" id="16" name="font-size" value="16" checked>
+        <label for="16">16 (default)</label>
+    </div>
+
+    <div>
+        <input type="radio" id="20" name="font-size" value="20">
+        <label for="20">20</label>
+    </div>
+
+    <div>
+        <input type="radio" id="24" name="font-size" value="24">
+        <label for="24">24</label>
+    </div>
+
+    <p>Choose some optional features for the sample text above:</p>
+
+    <div>
+        <input type="checkbox" id="bold" name="checkbox-style">
+        <label for="bold">Bold</label>
+    </div>
+
+    <div>
+        <input type="checkbox" id="italics" name="checkbox-style">
+        <label for="italics">Italics</label>
+    </div>
+
+    <div>
+        <input type="checkbox" id="increase-spacing" name="checkbox-style">
+        <label for="increase-spacing">Add space between characters</label>
+    </div>
+
+
+    <script src="hw7.1.js"></script>
+</body>
+
+</html>

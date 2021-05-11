@@ -1,0 +1,50 @@
+.source-sans-pro {
+	font-family: 'Source Sans Pro', sans-serif;
+}
+
+.nanum-gothic {
+	font-family: 'Nanum Gothic', sans-serif;
+}
+
+.arimo {
+	font-family: 'Arimo', sans-serif;
+}
+
+.newsreader {
+	font-family: 'Newsreader', serif;
+}
+
+.italics {
+	font-style: italic;
+}
+
+.letter-spacing {
+	letter-spacing: 2px;
+}
+
+.bold {
+	font-weight: bold;
+}
+
+.hoverable-div {
+	margin-top: 2%;
+	width: 8%;
+	margin-bottom: 4px;
+}
+
+.hoverable-nav-links {
+	display: none;
+}
+
+ul,
+li {
+	margin: 5px;
+	padding: 0;
+	list-style: none;
+	font-size: 20px;
+	text-align: center;
+}
+
+button {
+	font-size: 20px;
+}
