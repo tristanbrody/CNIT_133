@@ -1,12 +1,12 @@
-document.getElementById('font-select').addEventListener('change', e => {
-	changeFont(e.target.value);
-});
-
 for (let radioButton of Array.from(document.getElementsByName('font-size'))) {
 	radioButton.addEventListener('click', e => {
 		changeFontSize(e.target.value);
 	});
 }
+
+document.getElementById('font-select').addEventListener('change', e => {
+	changeFont(e.target.value);
+});
 
 for (let checkbox of Array.from(document.getElementsByName('checkbox-style'))) {
 	checkbox.addEventListener('click', e => {
@@ -16,9 +16,11 @@ for (let checkbox of Array.from(document.getElementsByName('checkbox-style'))) {
 
 function changeFont(font) {
 	//accepts a font name chosen via a select menu and changes DOM accordingly
-	if (!['', undefined].includes(font)) {
-		document.body.className = '';
+	document.body.className = '';
+	if (!['', undefined, 'Arial'].includes(font)) {
 		document.body.classList.add(font);
+	} else {
+		document.body.classList.add('default');
 	}
 }
 
@@ -37,3 +39,7 @@ const checkboxActions = {
 	'increase-spacing': `document.getElementById('sample-text').classList.toggle('letter-spacing');`,
 	bold: `document.getElementById('sample-text').classList.toggle('bold');`
 };
+
+function getComputedProperty(element, property) {
+	return window.getComputedStyle(element, null).getPropertyValue(property);
+}

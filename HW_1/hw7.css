@@ -1,16 +1,20 @@
-.source-sans-pro {
+.default-font {
+	font-family: Arial;
+}
+
+body.source-sans-pro {
 	font-family: 'Source Sans Pro', sans-serif;
 }
 
-.nanum-gothic {
+body.nanum-gothic {
 	font-family: 'Nanum Gothic', sans-serif;
 }
 
-.arimo {
+body.arimo {
 	font-family: 'Arimo', sans-serif;
 }
 
-.newsreader {
+body.newsreader {
 	font-family: 'Newsreader', serif;
 }
 
