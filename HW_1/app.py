@@ -6,7 +6,7 @@ load_dotenv()
 app = Flask(__name__)
 
 
-@app.route("/hw8")
+@app.route("/")
 def home():
     return render_template("hw8.html")
 
