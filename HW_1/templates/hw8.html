@@ -15,6 +15,29 @@
         <input type="text" name="first-name" id="first-name">
         <p id="hint-output"></p>
     </form>
+
+    <p>
+        For an example of an API, I chose one that is free, fun and easy to use: <strong><a
+                href="https://deckofcardsapi.com/">Deck of Cards API</a></strong>
+    </p>
+    <ul>
+        <p>Fun facts about the API:</p>
+        <li>Main URL above has the docs</li>
+        <li>It does not require any developer key to acces</li>
+        <li>Responses are provided in JSON</li>
+        <li>All interactions with the API can be made via get requests, with your parameters included as query strings
+            added to the endpoint</li>
+        <li>To get started, send a get request to
+            <strong>https://deckofcardsapi.com/api/deck/new/shuffle/?deck_count=1</strong> to get a
+            new deck ID
+        </li>
+        <li>Once you have a deck ID, you can pass that deck ID into endpoint
+            <strong>https://deckofcardsapi.com/api/deck/deck_id>/draw/?count=1</strong> to draw one or more cards
+        </li>
+        <li>If you create an image tag and set source equal to the 'image' property on one of the card objects returned
+            by the API, you get a nice image of the card:</li>
+        <img src="https://deckofcardsapi.com/static/img/KH.png" alt="King of hearts">
+    </ul>
     <script src="../static/hw8.js"></script>
 </body>
 
